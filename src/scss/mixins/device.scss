@@ -1,0 +1,9 @@
+@mixin mb-devices {
+  @each $name, $value in $device {
+    @media (min-width: $value) {
+      &-#{$name} {
+        @content;
+      }
+    }
+  }
+}
