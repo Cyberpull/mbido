@@ -13,11 +13,13 @@ html,body {
   @include mb-margin();
 
   @each $name, $value in $device {
-    &-#{$name} {
-      @include mb-colors();
-      @include mb-alignment();
-      @include mb-padding();
-      @include mb-margin();
+    @media (min-width: $value) {
+      &-#{$name} {
+        @include mb-colors();
+        @include mb-alignment();
+        @include mb-padding();
+        @include mb-margin();
+      }
     }
   }
 }
