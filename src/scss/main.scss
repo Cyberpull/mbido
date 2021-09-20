@@ -6,7 +6,7 @@ html,body {
   box-sizing: border-box;
 }
 
-.mbi {
+@include mb-core {
   @include mb-style-with-devices {
     @include mb-colors();
     @include mb-alignment();

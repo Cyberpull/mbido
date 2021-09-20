@@ -21,6 +21,7 @@ const ENTRY_JS = [
 
 const ENTRY_SCSS = [
   `${SRC_PATH_SCSS}/variables.scss`,
+  `${SRC_PATH_SCSS}/core.scss`,
   `${SRC_PATH_SCSS}/functions.scss`,
   `${SRC_PATH_SCSS}/mixins/**.scss`,
   `${SRC_PATH_SCSS}/main.scss`,

@@ -10,3 +10,7 @@
 
   @return map-get($device, md);
 }
+
+@function mb-var($name) {
+  @return var(--mbi-#{$name});
+}

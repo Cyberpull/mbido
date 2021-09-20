@@ -1,3 +1,5 @@
+$core: 'mbi';
+
 $color: (
   default: #CCC,
   primary: #02AFEE,
@@ -22,6 +24,6 @@ $range: (0, 100);
 
 :root {
   @each $name, $value in $color {
-    --mbi-#{$name}: #{$value};
+    --#{$core}-#{$name}: #{$value};
   }
 }

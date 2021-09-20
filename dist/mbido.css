@@ -24450,3 +24450,14 @@ html, body {
   clear: both;
   display: block;
 }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--mbi-default);
+}
+
+fieldset {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
