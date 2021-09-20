@@ -24,4 +24,12 @@ html,body {
       }
     }
   }
+
+  &-clearfix {
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
 }

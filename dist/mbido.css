@@ -23592,3 +23592,8 @@ html, body {
     margin-right: 100px;
   }
 }
+.mbi-clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
