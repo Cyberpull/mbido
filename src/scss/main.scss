@@ -7,13 +7,7 @@ html,body {
 }
 
 .mbi {
-  @include mb-colors();
-  @include mb-alignment();
-  @include mb-float();
-  @include mb-padding();
-  @include mb-margin();
-
-  @include mb-devices {
+  @include mb-style-with-devices {
     @include mb-colors();
     @include mb-alignment();
     @include mb-float();

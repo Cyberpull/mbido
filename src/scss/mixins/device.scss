@@ -7,3 +7,11 @@
     }
   }
 }
+
+@mixin mb-style-with-devices {
+  @content;
+
+  @include mb-devices {
+    @content;
+  }
+}
