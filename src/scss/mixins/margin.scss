@@ -1,0 +1,13 @@
+@mixin mb-margin() {
+  @for $n from nth($range, 1) through nth($range, 2) {
+    &-m-#{$n} { margin: #{$n}px; }
+
+    &-mx-#{$n} { margin-left: #{$n}px; margin-right: #{$n}px; }
+    &-my-#{$n} { margin-top: #{$n}px; margin-bottom: #{$n}px; }
+
+    &-mt-#{$n} { margin-top: #{$n}px; }
+    &-mb-#{$n} { margin-bottom: #{$n}px; }
+    &-ml-#{$n} { margin-left: #{$n}px; }
+    &-mr-#{$n} { margin-right: #{$n}px; }
+  }
+}

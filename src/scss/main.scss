@@ -5,3 +5,17 @@ html,body {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+.mbi {
+  @include mb-colors();
+  @include mb-padding();
+  @include mb-margin();
+
+  @each $name, $value in $device {
+    &-#{$name} {
+      @include mb-colors();
+      @include mb-padding();
+      @include mb-margin();
+    }
+  }
+}
