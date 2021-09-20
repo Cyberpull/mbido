@@ -9,6 +9,7 @@ html,body {
 .mbi {
   @include mb-colors();
   @include mb-alignment();
+  @include mb-float();
   @include mb-padding();
   @include mb-margin();
 
@@ -17,6 +18,7 @@ html,body {
       &-#{$name} {
         @include mb-colors();
         @include mb-alignment();
+        @include mb-float();
         @include mb-padding();
         @include mb-margin();
       }
