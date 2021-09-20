@@ -51,6 +51,18 @@ html, body {
 .mbi-br-primary {
   border-right: 1px solid #02AFEE;
 }
+.mbi-left {
+  text-align: left;
+}
+.mbi-right {
+  text-align: right;
+}
+.mbi-center {
+  text-align: center;
+}
+.mbi-justify {
+  text-align: justify;
+}
 .mbi-p-0 {
   padding: 0px;
 }
@@ -4738,6 +4750,18 @@ html, body {
 }
 .mbi-sm-br-primary {
   border-right: 1px solid #02AFEE;
+}
+.mbi-sm-left {
+  text-align: left;
+}
+.mbi-sm-right {
+  text-align: right;
+}
+.mbi-sm-center {
+  text-align: center;
+}
+.mbi-sm-justify {
+  text-align: justify;
 }
 .mbi-sm-p-0 {
   padding: 0px;
@@ -9427,6 +9451,18 @@ html, body {
 .mbi-md-br-primary {
   border-right: 1px solid #02AFEE;
 }
+.mbi-md-left {
+  text-align: left;
+}
+.mbi-md-right {
+  text-align: right;
+}
+.mbi-md-center {
+  text-align: center;
+}
+.mbi-md-justify {
+  text-align: justify;
+}
 .mbi-md-p-0 {
   padding: 0px;
 }
@@ -14115,6 +14151,18 @@ html, body {
 .mbi-lg-br-primary {
   border-right: 1px solid #02AFEE;
 }
+.mbi-lg-left {
+  text-align: left;
+}
+.mbi-lg-right {
+  text-align: right;
+}
+.mbi-lg-center {
+  text-align: center;
+}
+.mbi-lg-justify {
+  text-align: justify;
+}
 .mbi-lg-p-0 {
   padding: 0px;
 }
@@ -18802,6 +18850,18 @@ html, body {
 }
 .mbi-xl-br-primary {
   border-right: 1px solid #02AFEE;
+}
+.mbi-xl-left {
+  text-align: left;
+}
+.mbi-xl-right {
+  text-align: right;
+}
+.mbi-xl-center {
+  text-align: center;
+}
+.mbi-xl-justify {
+  text-align: justify;
 }
 .mbi-xl-p-0 {
   padding: 0px;

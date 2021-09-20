@@ -8,12 +8,14 @@ html,body {
 
 .mbi {
   @include mb-colors();
+  @include mb-alignment();
   @include mb-padding();
   @include mb-margin();
 
   @each $name, $value in $device {
     &-#{$name} {
       @include mb-colors();
+      @include mb-alignment();
       @include mb-padding();
       @include mb-margin();
     }
