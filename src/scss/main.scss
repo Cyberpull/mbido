@@ -7,6 +7,8 @@ html,body {
 }
 
 @include mb-core {
+  @include mb-row();
+
   @include mb-style-with-devices {
     @include mb-colors();
     @include mb-alignment();

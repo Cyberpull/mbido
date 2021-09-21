@@ -1,0 +1,56 @@
+@mixin mb-row() {
+  &-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px -10px;
+
+    > * {
+      display: block;
+      padding: 0px 10px;
+    }
+
+    > .col {
+      flex: 1 0 0;
+      width: auto;
+
+      &-auto {
+        flex: 0 0 auto;
+        width: auto;
+      }
+
+      @each $name, $width in $device {
+        @media (min-width: $width) {
+          &-#{$name}-auto {
+            flex: 0 0 auto;
+            width: auto;
+          }
+        }
+      }
+
+      $minRange: nth($colRange, 1);
+      $maxRange: nth($colRange, 2);
+
+      @for $n from $minRange through $maxRange {
+        $colWidth: calc($n / $maxRange * 100%);
+
+        &-#{$n} {
+          flex: 0 0 auto;
+          width: #{$colWidth};
+        }
+
+        @each $name, $width in $device {
+          &-#{$name}-#{$n} {
+            flex: 0 0 auto;
+            width: 100%;
+
+            @media (min-width: $width) {
+              width: #{$colWidth};
+            }
+          }
+        }
+      }
+    }
+  }
+}

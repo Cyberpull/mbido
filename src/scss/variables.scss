@@ -22,6 +22,8 @@ $device: (
 
 $range: (0, 100);
 
+$colRange: (1, 20);
+
 :root {
   @each $name, $value in $color {
     --#{$core}-#{$name}: #{$value};
