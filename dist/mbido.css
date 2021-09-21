@@ -26,7 +26,6 @@ html, body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   margin: 0px -10px;
 }
 .mbi-row > * {
