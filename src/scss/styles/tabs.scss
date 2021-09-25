@@ -25,11 +25,10 @@
     }
 
     &.active, &:hover {
-      background-color: var(--mbi-default) !important;
+      --color: var(--mbi-primary);
     }
 
     &.active {
-      --color: var(--mbi-primary);
       --font-weight: bold;
 
       &::after {

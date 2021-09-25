@@ -25337,10 +25337,9 @@ fieldset {
   font-weight: var(--font-weight) !important;
 }
 .mbi-tabs > li.active, .mbi-tabs > li:hover {
-  background-color: var(--mbi-default) !important;
+  --color: var(--mbi-primary);
 }
 .mbi-tabs > li.active {
-  --color: var(--mbi-primary);
   --font-weight: bold;
 }
 .mbi-tabs > li.active::after {
