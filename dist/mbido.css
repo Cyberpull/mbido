@@ -25327,15 +25327,25 @@ fieldset {
   list-style: none;
   margin: 0px;
   padding: 0px !important;
-  border-bottom: 1px solid var(--mbi-default) !important;
   overflow-y: hidden;
   overflow-x: auto;
+}
+.mbi-tabs::after {
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 1px;
+  background-color: var(--mbi-default) !important;
+  content: "";
 }
 .mbi-tabs > li {
   display: table-cell;
   position: relative;
   white-space: nowrap;
   margin: 0px;
+  z-index: 5;
 }
 .mbi-tabs > li > a {
   display: block;
