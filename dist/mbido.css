@@ -25334,7 +25334,7 @@ fieldset {
 }
 .mbi-tabs > li > a {
   display: block;
-  padding: 10px 20px;
+  padding: 20px;
   color: var(--color) !important;
   font-weight: var(--font-weight) !important;
 }
