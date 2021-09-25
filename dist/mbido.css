@@ -25320,8 +25320,10 @@ fieldset {
   flex-wrap: nowrap;
   list-style: none;
   margin: 0px 0px 20px 0px;
+  padding: 0px !important;
   overflow-y: hidden;
   overflow-x: auto;
+  border-bottom: 1px solid var(--mbi-default) !important;
 }
 .mbi-tabs > li {
   display: block;
@@ -25338,9 +25340,6 @@ fieldset {
 }
 .mbi-tabs > li.active, .mbi-tabs > li:hover {
   --color: var(--mbi-primary);
-}
-.mbi-tabs > li.active {
-  --font-weight: bold;
 }
 .mbi-tabs > li.active::after {
   display: block;

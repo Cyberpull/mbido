@@ -7,8 +7,10 @@
   flex-wrap: nowrap;
   list-style: none;
   margin: 0px 0px 20px 0px;
+  padding: 0px !important;
   overflow-y: hidden;
   overflow-x: auto;
+  border-bottom: 1px solid var(--mbi-default) !important;
 
   > li {
     display: block;
@@ -29,7 +31,7 @@
     }
 
     &.active {
-      --font-weight: bold;
+      // --font-weight: bold;
 
       &::after {
         display: block;
