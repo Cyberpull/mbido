@@ -25322,19 +25322,24 @@ fieldset {
 .mbi-tabs {
   --color: var(--mbi-dark);
   --font-weight: normal;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  display: block;
+  white-space: nowrap;
   list-style: none;
   margin: 0px;
   padding: 0px !important;
   border-bottom: 1px solid var(--mbi-default) !important;
+}
+.mbi-tabs::before, .mbi-tabs::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 .mbi-tabs > li {
   display: block;
   position: relative;
   white-space: nowrap;
   overflow: hidden;
+  float: left;
   margin: 0px;
 }
 .mbi-tabs > li > a {
