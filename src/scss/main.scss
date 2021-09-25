@@ -36,7 +36,9 @@ a {
 
   &-responsive {
     display: block;
-    overflow-y: hidden;
+    width: 100% !important;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
