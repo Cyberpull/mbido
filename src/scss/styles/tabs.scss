@@ -1,0 +1,46 @@
+@include mb-core(tabs) {
+  --color: var(--mbi-dark);
+  --font-weight: normal;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0px 0px 20px 0px;
+  overflow-y: hidden;
+  overflow-x: auto;
+
+  > li {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px;
+
+    > a {
+      display: block;
+      padding: 10px 20px;
+      color: var(--color) !important;
+      font-weight: var(--font-weight) !important;
+    }
+
+    &.active, &:hover {
+      background-color: var(--mbi-default) !important;
+    }
+
+    &.active {
+      --color: var(--mbi-primary);
+      --font-weight: bold;
+
+      &::after {
+        display: block;
+        position: absolute;
+        left: 0px; right: 0px;
+        bottom: 0px;
+        height: 3px;
+        background-color: var(--mbi-primary) !important;
+        content: "";
+      }
+    }
+  }
+}

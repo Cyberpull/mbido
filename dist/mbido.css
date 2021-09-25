@@ -25311,3 +25311,45 @@ fieldset {
   margin: 0px;
   padding: 0px;
 }
+
+.mbi-tabs {
+  --color: var(--mbi-dark);
+  --font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0px 0px 20px 0px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.mbi-tabs > li {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0px;
+}
+.mbi-tabs > li > a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--color) !important;
+  font-weight: var(--font-weight) !important;
+}
+.mbi-tabs > li.active, .mbi-tabs > li:hover {
+  background-color: var(--mbi-default) !important;
+}
+.mbi-tabs > li.active {
+  --color: var(--mbi-primary);
+  --font-weight: bold;
+}
+.mbi-tabs > li.active::after {
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 3px;
+  background-color: var(--mbi-primary) !important;
+  content: "";
+}
