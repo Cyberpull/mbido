@@ -33,4 +33,11 @@ a {
       display: block;
     }
   }
+
+  &-responsive {
+    display: block;
+    width: 100% !important;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
 }
