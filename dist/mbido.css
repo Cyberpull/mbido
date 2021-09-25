@@ -25302,7 +25302,6 @@ a:hover {
 }
 .mbi-responsive {
   display: block;
-  width: 100% !important;
   overflow-y: hidden;
   overflow-x: auto;
 }
