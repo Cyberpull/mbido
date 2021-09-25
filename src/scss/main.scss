@@ -6,6 +6,15 @@ html,body {
   box-sizing: border-box;
 }
 
+a {
+  color: var(--mbi-primary) !important;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 @include mb-core {
   @include mb-row();
 
