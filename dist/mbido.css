@@ -25323,6 +25323,7 @@ fieldset {
   --color: var(--mbi-dark);
   --font-weight: normal;
   display: block;
+  position: relative;
   white-space: nowrap;
   list-style: none;
   margin: 0px;
