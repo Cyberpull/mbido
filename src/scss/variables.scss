@@ -22,7 +22,7 @@ $device: (
 
 $range: (0, 100);
 
-$colRange: (1, 20);
+$colRange: (1, 24);
 
 :root {
   @each $name, $value in $color {
