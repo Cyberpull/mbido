@@ -19,15 +19,6 @@
         width: auto;
       }
 
-      @each $name, $width in $device {
-        @media (min-width: $width) {
-          &-#{$name}-auto {
-            flex: 0 0 auto;
-            width: auto;
-          }
-        }
-      }
-
       $minRange: nth($colRange, 1);
       $maxRange: nth($colRange, 2);
 
@@ -38,13 +29,20 @@
           flex: 0 0 auto;
           width: #{$colWidth};
         }
+      }
 
-        @each $name, $width in $device {
-          &-#{$name}-#{$n} {
+      @each $name, $width in $device {
+        @media (min-width: $width) {
+          &-#{$name}-auto {
             flex: 0 0 auto;
-            width: 100%;
+            width: auto;
+          }
 
-            @media (min-width: $width) {
+          @for $n from $minRange through $maxRange {
+            $colWidth: calc($n / $maxRange * 100%);
+
+            &-#{$name}-#{$n} {
+              flex: 0 0 auto;
               width: #{$colWidth};
             }
           }
