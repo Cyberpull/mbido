@@ -36,6 +36,36 @@ a:hover {
   flex-wrap: wrap;
   margin: 0px -10px;
 }
+.mbi-row.align-center {
+  align-items: center;
+}
+.mbi-row.align-start {
+  align-items: flex-start;
+}
+.mbi-row.align-end {
+  align-items: flex-end;
+}
+.mbi-row.justify-center {
+  justify-content: center;
+}
+.mbi-row.justify-start {
+  justify-content: flex-start;
+}
+.mbi-row.justify-end {
+  justify-content: flex-end;
+}
+.mbi-row.justify-baseline {
+  justify-content: baseline;
+}
+.mbi-row.justify-space-around {
+  justify-content: space-around;
+}
+.mbi-row.justify-space-between {
+  justify-content: space-between;
+}
+.mbi-row.justify-space-evenly {
+  justify-content: space-evenly;
+}
 .mbi-row > * {
   display: block;
   padding: 0px 10px;
