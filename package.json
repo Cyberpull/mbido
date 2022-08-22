@@ -1,6 +1,6 @@
 {
   "name": "mbido",
-  "version": "1.9.1",
+  "version": "2.0.0",
   "description": "mbido",
   "main": "index.js",
   "scripts": {

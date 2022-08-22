@@ -2,16 +2,27 @@
  *
  */
 :root {
-  --mbi-default: #CCC;
-  --mbi-primary: #02AFEE;
-  --mbi-secondary: #6C757D;
-  --mbi-error: #F00;
-  --mbi-danger: #DC3545;
-  --mbi-success: #090;
-  --mbi-warning: #FFC107;
-  --mbi-info: #0DCAF0;
-  --mbi-light: #F8F9FA;
-  --mbi-dark: #212529;
+  --mbi-default-rgb: 204, 204, 204;
+  --mbi-default: rgb(var(--mbi-default-rgb));
+  --mbi-primary-rgb: 2, 175, 238;
+  --mbi-primary: rgb(var(--mbi-primary-rgb));
+  --mbi-secondary-rgb: 108, 117, 125;
+  --mbi-secondary: rgb(var(--mbi-secondary-rgb));
+  --mbi-error-rgb: 255, 0, 0;
+  --mbi-error: rgb(var(--mbi-error-rgb));
+  --mbi-danger-rgb: 220, 53, 69;
+  --mbi-danger: rgb(var(--mbi-danger-rgb));
+  --mbi-success-rgb: 0, 153, 0;
+  --mbi-success: rgb(var(--mbi-success-rgb));
+  --mbi-warning-rgb: 255, 193, 7;
+  --mbi-warning: rgb(var(--mbi-warning-rgb));
+  --mbi-info-rgb: 13, 202, 240;
+  --mbi-info: rgb(var(--mbi-info-rgb));
+  --mbi-light-rgb: 248, 249, 250;
+  --mbi-light: rgb(var(--mbi-light-rgb));
+  --mbi-dark-rgb: 33, 37, 41;
+  --mbi-dark: rgb(var(--mbi-dark-rgb));
+  --mbi-link-color: var(--mbi-primary);
 }
 
 html, body {
@@ -23,7 +34,7 @@ html, body {
 }
 
 a {
-  color: var(--mbi-primary) !important;
+  color: var(--mbi-link-color) !important;
   text-decoration: none;
 }
 a:hover {

@@ -26,6 +26,9 @@ $colRange: (1, 24);
 
 :root {
   @each $name, $value in $color {
-    --#{$core}-#{$name}: #{$value};
+    --mbi-#{$name}-rgb: #{red($value)}, #{green($value)}, #{blue($value)};
+    --mbi-#{$name}: rgb(var(--mbi-#{$name}-rgb));
   }
+
+  --mbi-link-color: var(--mbi-primary);
 }
