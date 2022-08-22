@@ -25024,9 +25024,10 @@ a:hover {
   display: block;
 }
 .mbi-responsive {
+  --width: 100%;
   display: block;
-  width: 100% !important;
   overflow-x: auto;
+  width: var(--width) !important;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
