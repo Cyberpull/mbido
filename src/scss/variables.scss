@@ -26,7 +26,11 @@ $colRange: (1, 24);
 
 :root {
   @each $name, $value in $color {
-    --#{$core}-#{$name}-rgb: #{red($value)}, #{green($value)}, #{blue($value)};
+    --#{$core}-#{$name}-red: #{red($value)};
+    --#{$core}-#{$name}-green: #{green($value)};
+    --#{$core}-#{$name}-blue: #{blue($value)};
+
+    --#{$core}-#{$name}-rgb: var(--#{$core}-#{$name}-red), var(--#{$core}-#{$name}-green), var(--#{$core}-#{$name}-blue);
     --#{$core}-#{$name}: rgb(var(--#{$core}-#{$name}-rgb));
   }
 
