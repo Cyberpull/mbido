@@ -1,0 +1,14 @@
+@use '../variables' as v;
+
+@mixin mbi-colors() {
+  @each $name, $value in v.$color {
+    &-#{$name} { color: #{$value}; }
+    &-bg-#{$name} { background-color: #{$value}; }
+
+    &-b-#{$name} { border: 1px solid #{$value}; }
+    &-bt-#{$name} { border-top: 1px solid #{$value}; }
+    &-bb-#{$name} { border-bottom: 1px solid #{$value}; }
+    &-bl-#{$name} { border-left: 1px solid #{$value}; }
+    &-br-#{$name} { border-right: 1px solid #{$value}; }
+  }
+}

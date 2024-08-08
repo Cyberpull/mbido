@@ -1,0 +1,45 @@
+@use './variables' as v;
+
+@mixin mbi-core($name: '') {
+  $core-name: '.' + v.$core;
+
+  @if $name != '' {
+    $core-name: $core-name + '-' + $name;
+  }
+
+  #{$core-name} {
+    @content;
+  }
+}
+
+// BEGIN: Device Width
+
+@mixin mbi-device($key) {
+  @if map-has-key(v.$device, $key) {
+    $value: map-get(v.$device, $key);
+
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+@mixin mbi-devices {
+  @each $name, $value in v.$device {
+    @media (min-width: $value) {
+      &-#{$name} {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin mbi-style-with-devices {
+  @content;
+
+  @include mbi-devices {
+    @content;
+  }
+}
+
+// BEGIN: Device Width

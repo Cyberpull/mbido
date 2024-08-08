@@ -1,6 +1,3 @@
-/**
- *
- */
 :root {
   --mbi-default-red: 204;
   --mbi-default-green: 204;
@@ -61,14 +58,6 @@ html, body {
 
 *, *::before, *::after {
   box-sizing: border-box;
-}
-
-a {
-  color: var(--mbi-link-color) !important;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
 }
 
 .mbi-row {
@@ -25060,65 +25049,4 @@ a:hover {
   width: var(--width) !important;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid var(--mbi-default);
-}
-
-fieldset {
-  border: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.mbi-tabs {
-  --color: var(--mbi-dark);
-  --font-weight: normal;
-  display: block;
-  position: relative;
-  white-space: nowrap;
-  list-style: none;
-  margin: 0px 0px 20px 0px;
-  padding: 0px !important;
-  overflow-y: hidden;
-  overflow-x: auto;
-}
-.mbi-tabs::after {
-  display: block;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  height: 1px;
-  background-color: var(--mbi-default) !important;
-  content: "";
-}
-.mbi-tabs > li {
-  display: table-cell;
-  position: relative;
-  white-space: nowrap;
-  margin: 0px;
-  z-index: 5;
-}
-.mbi-tabs > li > a {
-  display: block;
-  padding: 20px;
-  color: var(--color) !important;
-  font-weight: var(--font-weight) !important;
-  text-decoration: none !important;
-}
-.mbi-tabs > li.active, .mbi-tabs > li:hover {
-  --color: var(--mbi-primary);
-}
-.mbi-tabs > li.active::after {
-  display: block;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: -1px;
-  height: 3px;
-  background-color: var(--mbi-primary) !important;
-  content: "";
 }

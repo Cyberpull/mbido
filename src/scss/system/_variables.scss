@@ -1,0 +1,36 @@
+$core: 'mbi';
+
+$color-default: #CCC !default;
+$color-primary: #02AFEE !default;
+$color-secondary: #6C757D !default;
+$color-error: #F00 !default;
+$color-danger: #DC3545 !default;
+$color-success: #090 !default;
+$color-warning: #FFC107 !default;
+$color-info: #0DCAF0 !default;
+$color-light: #F8F9FA !default;
+$color-dark: #212529 !default;
+
+$color: (
+  default: $color-default,
+  primary: $color-primary,
+  secondary: $color-secondary,
+  error: $color-error,
+  danger: $color-danger,
+  success: $color-success,
+  warning: $color-warning,
+  info: $color-info,
+  light: $color-light,
+  dark: $color-dark,
+);
+
+$device: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+$range: (0, 100);
+
+$colRange: (1, 24);

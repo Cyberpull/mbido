@@ -1,0 +1,14 @@
+@use './system/variables' as v;
+
+:root {
+  @each $name, $value in v.$color {
+    --#{v.$core}-#{$name}-red: #{red($value)};
+    --#{v.$core}-#{$name}-green: #{green($value)};
+    --#{v.$core}-#{$name}-blue: #{blue($value)};
+
+    --#{v.$core}-#{$name}-rgb: var(--#{v.$core}-#{$name}-red), var(--#{v.$core}-#{$name}-green), var(--#{v.$core}-#{$name}-blue);
+    --#{v.$core}-#{$name}: rgb(var(--#{v.$core}-#{$name}-rgb));
+  }
+
+  --#{v.$core}-link-color: var(--#{v.$core}-primary);
+}

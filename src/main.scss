@@ -1,0 +1,41 @@
+@use './scss/system' as x;
+
+@use './scss/root';
+
+html, body {
+  margin: 0px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@include x.mbi-core {
+  @include x.mbi-row();
+
+  @include x.mbi-style-with-devices {
+    @include x.mbi-colors();
+    @include x.mbi-alignment();
+    @include x.mbi-float();
+    @include x.mbi-padding();
+    @include x.mbi-margin();
+  }
+
+  &-clearfix {
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
+
+  &-responsive {
+    --width: 100%;
+
+    display: block;
+    overflow-x: auto;
+    width: var(--width) !important;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
