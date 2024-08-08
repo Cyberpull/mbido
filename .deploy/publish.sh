@@ -1,7 +1,7 @@
 set -e
 
 # ===========================
-# Publish NGSuite
+# Publish mbido
 # ===========================
 
 npm set //registry.npmjs.org/:_authToken $TOKEN
