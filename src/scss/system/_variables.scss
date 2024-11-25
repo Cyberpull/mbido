@@ -11,6 +11,7 @@ $color-info: #0DCAF0 !default;
 $color-light: #F8F9FA !default;
 $color-dark: #212529 !default;
 
+// Colors
 $color: (
   default: $color-default,
   primary: $color-primary,
@@ -24,6 +25,7 @@ $color: (
   dark: $color-dark,
 );
 
+// Devices
 $device: (
   xs: 375px,
   sm: 576px,
