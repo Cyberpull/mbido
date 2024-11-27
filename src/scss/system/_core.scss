@@ -15,8 +15,8 @@
 // BEGIN: Device Width
 
 @mixin device($key) {
-  @if map-has-key(mbi.$device, $key) {
-    $value: map-get(mbi.$device, $key);
+  @if map.has-key(mbi.$device, $key) {
+    $value: map.get(mbi.$device, $key);
 
     @media (min-width: $value) {
       @content;

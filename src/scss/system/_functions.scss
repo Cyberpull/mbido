@@ -1,16 +1,16 @@
 @use './variables' as mbi;
 
 @function color($key: default, $darken: 0) {
-  $value: map-get(mbi.$color, $key);
+  $value: map.get(mbi.$color, $key);
   @return darken($value, $darken);
 }
 
 @function device($key: md) {
-  @if map-has-key(mbi.$device, $key) {
-    @return map-get(mbi.$device, $key);
+  @if map.has-key(mbi.$device, $key) {
+    @return map.get(mbi.$device, $key);
   }
 
-  @return map-get(mbi.$device, md);
+  @return map.get(mbi.$device, md);
 }
 
 @function var($name) {
