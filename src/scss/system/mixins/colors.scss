@@ -1,7 +1,7 @@
-@use '../variables' as v;
+@use '../variables' as mbi;
 
-@mixin mbi-colors() {
-  @each $name, $value in v.$color {
+@mixin colors() {
+  @each $name, $value in mbi.$color {
     &-#{$name} { color: #{$value}; }
     &-bg-#{$name} { background-color: #{$value}; }
 

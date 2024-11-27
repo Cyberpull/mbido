@@ -1,18 +1,18 @@
-@use './variables' as v;
+@use './variables' as mbi;
 
-@function mbi-color($key: default, $darken: 0) {
-  $value: map-get(v.$color, $key);
+@function color($key: default, $darken: 0) {
+  $value: map-get(mbi.$color, $key);
   @return darken($value, $darken);
 }
 
-@function mbi-device($key: md) {
-  @if map-has-key(v.$device, $key) {
-    @return map-get(v.$device, $key);
+@function device($key: md) {
+  @if map-has-key(mbi.$device, $key) {
+    @return map-get(mbi.$device, $key);
   }
 
-  @return map-get(v.$device, md);
+  @return map-get(mbi.$device, md);
 }
 
-@function mbi-var($name) {
+@function var($name) {
   @return var(--mbi-#{$name});
 }

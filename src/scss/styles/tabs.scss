@@ -1,4 +1,6 @@
-@include mb-core(tabs) {
+@use '../system' as mbi;
+
+@include mbi.core(tabs) {
   --color: var(--mbi-dark);
   --font-weight: normal;
 

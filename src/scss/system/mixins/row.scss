@@ -1,6 +1,6 @@
-@use '../variables' as v;
+@use '../variables' as mbi;
 
-@mixin mbi-row() {
+@mixin row() {
   &-row {
     display: flex;
     flex-direction: row;
@@ -35,8 +35,8 @@
         width: auto;
       }
 
-      $minRange: nth(v.$colRange, 1);
-      $maxRange: nth(v.$colRange, 2);
+      $minRange: nth(mbi.$colRange, 1);
+      $maxRange: nth(mbi.$colRange, 2);
 
       @for $n from $minRange through $maxRange {
         $colWidth: calc($n / $maxRange * 100%);
@@ -47,7 +47,7 @@
         }
       }
 
-      @each $name, $width in v.$device {
+      @each $name, $width in mbi.$device {
         @media (min-width: $width) {
           &-#{$name}-auto {
             flex: 0 0 auto;

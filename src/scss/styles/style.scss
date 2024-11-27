@@ -1,6 +1,8 @@
+@use '../system' as mbi;
+
 hr {
   border: none;
-  border-top: 1px solid mb-var(default);
+  border-top: 1px solid mbi.var(default);
 }
 
 fieldset {

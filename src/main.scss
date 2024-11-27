@@ -1,4 +1,4 @@
-@use './scss/system' as x;
+@use './scss/system' as mbi;
 
 @use './scss/root';
 
@@ -10,15 +10,15 @@ html, body {
   box-sizing: border-box;
 }
 
-@include x.mbi-core {
-  @include x.mbi-row();
+@include mbi.core {
+  @include mbi.row();
 
-  @include x.mbi-style-with-devices {
-    @include x.mbi-colors();
-    @include x.mbi-alignment();
-    @include x.mbi-float();
-    @include x.mbi-padding();
-    @include x.mbi-margin();
+  @include mbi.style-with-devices {
+    @include mbi.colors();
+    @include mbi.alignment();
+    @include mbi.float();
+    @include mbi.padding();
+    @include mbi.margin();
   }
 
   &-clearfix {

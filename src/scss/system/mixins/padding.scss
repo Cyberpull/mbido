@@ -1,7 +1,7 @@
-@use '../variables' as v;
+@use '../variables' as mbi;
 
-@mixin mbi-padding() {
-  @for $n from nth(v.$range, 1) through nth(v.$range, 2) {
+@mixin padding() {
+  @for $n from nth(mbi.$range, 1) through nth(mbi.$range, 2) {
     &-p-#{$n} { padding: #{$n}px; }
 
     &-px-#{$n} { padding-left: #{$n}px; padding-right: #{$n}px; }

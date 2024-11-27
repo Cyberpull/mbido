@@ -1,7 +1,7 @@
-@use '../variables' as v;
+@use '../variables' as mbi;
 
-@mixin mbi-margin() {
-  @for $n from nth(v.$range, 1) through nth(v.$range, 2) {
+@mixin margin() {
+  @for $n from nth(mbi.$range, 1) through nth(mbi.$range, 2) {
     &-m-#{$n} { margin: #{$n}px; }
 
     &-mx-#{$n} { margin-left: #{$n}px; margin-right: #{$n}px; }
