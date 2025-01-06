@@ -1,7 +1,8 @@
+@use 'sass:list';
 @use '../variables' as mbi;
 
 @mixin padding() {
-  @for $n from nth(mbi.$range, 1) through nth(mbi.$range, 2) {
+  @for $n from list.nth(mbi.$range, 1) through list.nth(mbi.$range, 2) {
     &-p-#{$n} { padding: #{$n}px; }
 
     &-px-#{$n} { padding-left: #{$n}px; padding-right: #{$n}px; }
