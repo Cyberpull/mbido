@@ -3,9 +3,9 @@
 
 :root {
   @each $name, $value in v.$color {
-    --#{v.$core}-#{$name}-red: #{color.red($value)};
-    --#{v.$core}-#{$name}-green: #{color.green($value)};
-    --#{v.$core}-#{$name}-blue: #{color.blue($value)};
+    --#{v.$core}-#{$name}-red: #{color.channel($value, "red", $space: rgb)};
+    --#{v.$core}-#{$name}-green: #{color.channel($value, "green", $space: rgb)};
+    --#{v.$core}-#{$name}-blue: #{color.channel($value, "blue", $space: rgb)};
 
     --#{v.$core}-#{$name}-rgb: var(--#{v.$core}-#{$name}-red), var(--#{v.$core}-#{$name}-green), var(--#{v.$core}-#{$name}-blue);
     --#{v.$core}-#{$name}: rgb(var(--#{v.$core}-#{$name}-rgb));
